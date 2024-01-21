@@ -16,27 +16,26 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-
     behaviors {
-      hml: homerow_mods_left {
-          compatible = "zmk,behavior-hold-tap";
-          label = "HOMEROW_MODS_L";
-          #binding-cells = <2>;
-          tapping-term-ms = <200>;
-          quick-tap-ms = <150>;
-          flavor = "tap-preferred";
-          bindings = <&kp>, <&kp>;
-      };
-      hmr: homerow_mods_right {
-          compatible = "zmk,behavior-hold-tap";
-          label = "HOMEROW_MODS_R";
-          #binding-cells = <2>;
-          tapping-term-ms = <200>;
-          quick-tap-ms = <150>;
-          flavor = "tap-preferred";
-          bindings = <&kp>, <&kp>;
-      };
+        hml: homerow_mods_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_L";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
 
+        hmr: homerow_mods_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_R";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     keymap {
@@ -68,11 +67,11 @@
 
         raise_layer {
             bindings = <
-&trans     &kp RA(N8)       &kp RA(N9)           &kp UP               &kp LS(N8)  &kp LS(N9)              &kp LS(FSLH)         &kp HOME         &kp UP      &kp END     &kp LS(RBKT)   &kp RA(RBKT)
-&kp GRAVE  &kp LS(EQUAL)    &kp LEFT             &kp DOWN             &kp RIGHT   &kp EQUAL               &kp RA(MINUS)        &kp LEFT         &kp DOWN    &kp RIGHT   &kp LS(MINUS)  &kp RA(N4)
-&trans     &kp NON_US_BSLH  &kp LS(NON_US_BSLH)  &kp RA(NON_US_BSLH)  &kp RA(N7)  &kp RA(N0)  &kp C_MUTE  &kp LS(NON_US_HASH)  &kp NON_US_HASH  &kp LS(N5)  &kp LS(N6)  &kp LS(N7)     &trans
+&trans  &trans            &trans             &trans          &trans           &trans              &trans  &kp HOME  &kp UP    &kp END    &trans  &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans              &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &trans            &trans             &trans          &trans           &trans  &kp C_MUTE  &trans  &trans    &trans    &trans     &trans  &trans
 
-                            &trans               &trans               &mo 3       &trans                  &trans               &trans           &trans      &trans
+                          &trans             &trans          &trans           &trans              &trans  &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
