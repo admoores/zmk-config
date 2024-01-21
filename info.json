@@ -1,7 +1,7 @@
 {
-    "keyboard_name": "",
+    "keyboard_name": "choctopus44",
     "url": "",
-    "maintainer": "qmk",
+    "maintainer": "encipher",
     "layouts": {
         "LAYOUT": {
             "layout": [
@@ -319,6 +319,15 @@
                     "col": 8,
                     "x": 10,
                     "y": 5
+                }
+            ],
+            "sensors": [
+                {
+                    "ref": "middle_encoder",
+                    "name": "encoder_middle",
+                    "identifier": "encoder_middle",
+                    "compatible": "alps,ec11",
+                    "label": "MIDDLE_ENCODER"
                 }
             ]
         }
