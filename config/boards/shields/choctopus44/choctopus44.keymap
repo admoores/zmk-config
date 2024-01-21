@@ -5,16 +5,15 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 
 &mt {
     tapping-term-ms = <400>;
 };
 
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
+
+
+/* BEGIN PASTE FROM EDITOR */
 
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -25,11 +24,11 @@
 
         default_layer {
             bindings = <
-&kp ESC    &kp Q     &kp W  &kp E      &kp R      &kp T  &kp Y      &kp U     &kp I     &kp O      &kp P    &kp BSPC
-&kp TAB    &kp A     &kp S  &kp D      &kp F      &kp G  &kp H      &kp J     &kp K     &kp L      &kp SQT  &kp SEMI
-&kp LSHFT  &kp Z     &kp X  &kp C      &kp V      &kp B  &kp LSHFT  &kp N     &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RET
+&kp ESC      &kp Q  &kp W           &kp E           &kp R           &kp T                 &kp Y      &kp U           &kp I              &kp O            &kp P     &kp BSPC
+&kp TAB      &kp A  &ht_hp LALT S   &ht_hp LGUI D   &ht_hp LCTRL F  &kp G                 &kp H      &ht_hp RCTRL J  &ht_hp RGUI K      &ht_hp RALT L    &kp SQT   &kp SEMI
+&key_repeat  &kp Z  &kp X           &kp C           &kp V           &kp B      &kp LSHFT  &kp N      &kp M           &kp COMMA          &kp DOT          &kp FSLH  &kp RET
 
-&kp LCTRL  &kp LALT  &mo 1  &kp LSHFT  &kp SPACE         &mo 2      &kp RGUI  &kp RALT
+                    &trans  &trans  &mo 1  &kp LSHFT             &kp SPACE  &mo 2  &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
@@ -37,11 +36,11 @@
 
         lower_layer {
             bindings = <
-&kp TILDE  &kp EXCL      &kp AT_SIGN   &kp POUND     &kp DOLLAR    &kp PERCENT  &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp NUMBER_6  &kp NUMBER_7   &kp N8        &kp N9                &kp N0                 &kp BACKSLASH
-&kp F1     &kp F2        &kp F3        &kp F4        &kp F5        &kp F6       &trans        &kp F7         &kp F8        &kp F9                &kp F10                &kp F11        &kp F12
+&kp TILDE  &kp EXCL        &kp AT_SIGN      &kp POUND         &kp DOLLAR         &kp PERCENT          &kp CARET     &kp AMPERSAND     &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&kp GRAVE  &kp N1          &ht_hp LALT N2   &ht_hp LGUI N3    &ht_hp LCTRL N4    &kp N5               &kp N6        &ht_hp RCTRL N7   &ht_hp RGUI N8   &ht_hp RALT N9        &kp N0                 &kp PIPE
+&trans     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp UNDER    &trans  &kp PLUS      &kp MINUS         &kp EQUAL        &kp LESS_THAN         &kp GREATER_THAN       &kp BACKSLASH
 
-&trans     &trans        &trans        &trans        &trans                     &trans        &trans         &trans
+                           &trans           &trans            &trans             &trans               &trans        &trans         &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
@@ -49,28 +48,14 @@
 
         raise_layer {
             bindings = <
-&trans     &kp RA(N8)       &kp RA(N9)           &kp UP               &kp LS(N8)  &kp LS(N9)  &kp LS(FSLH)   &kp HOME             &kp UP           &kp END     &kp LS(RBKT)   &kp RA(RBKT)
-&kp GRAVE  &kp LS(EQUAL)    &kp LEFT             &kp DOWN             &kp RIGHT   &kp EQUAL   &kp RA(MINUS)  &kp LEFT             &kp DOWN         &kp RIGHT   &kp LS(MINUS)  &kp RA(N4)
-&trans     &kp NON_US_BSLH  &kp LS(NON_US_BSLH)  &kp RA(NON_US_BSLH)  &kp RA(N7)  &kp RA(N0)  &kp C_MUTE     &kp LS(NON_US_HASH)  &kp NON_US_HASH  &kp LS(N5)  &kp LS(N6)     &kp LS(N7)    &trans
+&trans     &kp RA(N8)       &kp RA(N9)           &kp UP               &kp LS(N8)  &kp LS(N9)              &kp LS(FSLH)         &kp HOME         &kp UP      &kp END     &kp LS(RBKT)   &kp RA(RBKT)
+&kp GRAVE  &kp LS(EQUAL)    &kp LEFT             &kp DOWN             &kp RIGHT   &kp EQUAL               &kp RA(MINUS)        &kp LEFT         &kp DOWN    &kp RIGHT   &kp LS(MINUS)  &kp RA(N4)
+&trans     &kp NON_US_BSLH  &kp LS(NON_US_BSLH)  &kp RA(NON_US_BSLH)  &kp RA(N7)  &kp RA(N0)  &kp C_MUTE  &kp LS(NON_US_HASH)  &kp NON_US_HASH  &kp LS(N5)  &kp LS(N6)  &kp LS(N7)     &trans
 
-&trans     &trans           &mo 3                &trans               &trans                  &trans         &trans               &trans
+                            &trans               &trans               &mo 3       &trans                  &trans               &trans           &trans      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
-
-        adjust_layer {
-            bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR  &none       &none        &kp PSCRN    &kp SLCK  &kp PAUSE_BREAK  &none
-&none         &none         &none         &none         &none         &none       &none       &none        &kp INSERT   &kp HOME  &kp PG_UP        &none
-&none         &none         &none         &none         &none         &none       &kp C_MUTE  &bootloader  &kp C_RESET  &kp DEL   &kp END          &kp PG_DN  &none
-
-&trans        &trans        &trans        &trans        &trans                    &trans      &trans       &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-        };
     };
 };
-
-
