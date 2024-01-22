@@ -55,11 +55,11 @@
 
         lower_layer {
             bindings = <
-&kp TILDE  &kp EXCL        &kp AT_SIGN      &kp POUND         &kp DOLLAR         &kp PERCENT          &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&kp GRAVE  &kp N1          &hml LALT N2     &hml LGUI N3      &hml LCTRL N4      &kp N5               &kp N6     &hmr RCTRL N7  &hmr RGUI N8  &hmr RALT N9          &kp N0                 &kp PIPE
-&trans     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp UNDER    &trans  &kp PLUS   &kp MINUS      &kp EQUAL     &kp LESS_THAN         &kp GREATER_THAN       &kp BACKSLASH
+&kp TILDE  &kp EXCL  &kp AT_SIGN   &kp POUND     &kp DOLLAR     &kp PERCENT          &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&kp GRAVE  &kp N1    &hml LALT N2  &hml LGUI N3  &hml LCTRL N4  &kp N5               &kp N6     &hmr RCTRL N7  &hmr RGUI N8  &hmr RALT N9          &kp N0                 &kp PIPE
+&trans     &trans    &trans        &kp EQUAL     &kp PLUS       &trans       &trans  &trans     &kp MINUS      &kp UNDER     &kp LESS_THAN         &kp GREATER_THAN       &kp BACKSLASH
 
-                           &trans           &trans            &trans             &trans               &trans     &trans         &trans        &trans
+                     &trans        &trans        &trans         &trans               &trans     &trans         &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
@@ -74,7 +74,8 @@
                           &trans             &trans          &trans           &trans              &trans  &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
     };
 };
+
