@@ -67,16 +67,14 @@
 
         raise_layer {
             bindings = <
-&trans  &kp LESS_THAN     &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK              &trans  &kp HOME  &kp UP    &kp END    &trans  &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS                 &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &trans            &trans             &kp PLUS              &kp EQUAL              &kp UNDER     &kp C_MUTE  &trans  &trans    &trans    &trans     &trans  &trans
+&trans  &kp LESS_THAN     &kp GREATER_THAN             &kp LEFT_PARENTHESIS       &kp RIGHT_PARENTHESIS          &kp ASTERISK              &trans  &kp HOME  &kp UP    &kp END    &trans  &trans
+&trans  &kp LEFT_BRACKET  &hml LEFT_ALT RIGHT_BRACKET  &hml LEFT_META LEFT_BRACE  &hml LEFT_CONTROL RIGHT_BRACE  &kp MINUS                 &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &trans            &trans                       &kp PLUS                   &kp EQUAL                      &kp UNDER     &kp C_MUTE  &trans  &trans    &trans    &trans     &trans  &trans
 
-                          &trans             &trans                &trans                 &trans                    &trans  &trans    &trans    &trans
+                          &trans                       &trans                     &trans                         &trans                    &trans  &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
     };
 };
-
-
