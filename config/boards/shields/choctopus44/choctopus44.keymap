@@ -57,7 +57,7 @@
             bindings = <
 &kp TILDE  &kp EXCL  &kp AT_SIGN   &kp POUND     &kp DOLLAR     &kp PERCENT          &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &kp GRAVE  &kp N1    &hml LALT N2  &hml LGUI N3  &hml LCTRL N4  &kp N5               &kp N6     &hmr RCTRL N7  &hmr RGUI N8  &hmr RALT N9          &kp N0                 &kp PIPE
-&trans     &trans    &trans        &kp EQUAL     &kp PLUS       &trans       &trans  &kp EQUAL  &kp MINUS      &kp UNDER     &kp LESS_THAN         &kp GREATER_THAN       &kp BACKSLASH
+&trans     &trans    &trans        &trans        &kp EQUAL      &kp PLUS     &trans  &kp UNDER  &kp MINUS      &trans        &trans                &trans                 &kp BACKSLASH
 
                      &trans        &trans        &trans         &trans               &trans     &trans         &trans        &trans
             >;
@@ -78,3 +78,4 @@
         };
     };
 };
+
