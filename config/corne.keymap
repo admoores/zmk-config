@@ -49,8 +49,8 @@
                         bindings = <
    &kp ESC   &kp Q &kp W        &kp E         &kp R         &kp T          &kp Y      &kp U         &kp I        &kp O        &kp P      &kp BSPC
    &kp TAB   &kp A &hml LALT S  &hml LGUI D   &hml LCTRL F  &kp G          &kp H      &hmr RCTRL J  &hmr RGUI K  &hmr RALT L  &kp SEMI   &kp SQT
-   &kp MINUS &kp Z &kp X        &kp C         &kp V         &kp B          &kp N      &kp M         &kp COMMA    &kp DOT      &kp FSLH   &kp ENT
-                                &tog 3        &mo 2         &kp LSHFT      &kp SPACE  &mo 1         &trans
+   &kp MINUS &kp Z &kp X        &kp C         &kp V         &kp B          &kp N      &kp M         &kp COMMA    &kp DOT      &kp FSLH   &kp RET
+                                &tog 3        &mo 2         &kp LSHFT      &kp SPACE  &mo 1         &mo 1
                         >;
                 };
                 lower_layer {
@@ -87,10 +87,10 @@
                 move_layer {
                         display-name = "GAME2";
                         bindings = <
-        &kp ESC   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp UP       &kp RIGHT_BRACKET  &kp RIGHT_BRAC      &trans &trans &trans &trans &trans &trans
-        &kp TAB   &kp KP_PLUS      &kp LEFT           &kp DOWN     &kp RIGHT          &kp KP_MINUS        &trans &trans &trans &trans &trans &trans
-        &kp SHIFT &kp KP_MULTIPLY  &kp KP_SLASH       &kp KP_EQUAL &kp KP_COMMA       &kp KP_DOT          &trans &trans &trans &trans &trans &trans
-                                                      &tog 3       &mo 4              &kp SPACE           &trans &trans &trans
+        &kp ESC   &kp LEFT_BRACE        &kp LEFT_BRACKET   &kp UP       &kp RIGHT_BRACKET  &kp RIGHT_BRACE      &trans &trans &trans &trans &trans &trans
+        &kp TAB   &kp KP_PLUS           &kp LEFT           &kp DOWN     &kp RIGHT          &kp KP_MINUS         &trans &trans &trans &trans &trans &trans
+        &kp SHIFT &kp LPAR              &kp KP_PLUS        &kp KP_MINUS &kp KP_SLASH       &kp RPAR             &trans &trans &trans &trans &trans &trans
+                                                      &tog 3       &mo 4                   &kp SPACE            &trans &trans &trans
                         >;
                 };
         };
