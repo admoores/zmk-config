@@ -77,19 +77,19 @@
                 game_layer {
                         display-name = "GAME";
                         bindings = <
-        &kp ESC   &kp N1 &kp N2   &kp N3  &kp N4    &kp N5           &trans &trans &trans &trans &trans &trans
-        &kp TAB   &kp N6 &kp N7   &kp N8  &kp N9    &kp N0           &trans &trans &trans &trans &trans &trans
-        &kp SHIFT &kp LT &kp PLUS &kp DOT &kp MINUS &kp GT           &trans &trans &trans &trans &trans &trans
-                                &tog 3 &mo 4        &kp SPACE        &trans &trans &trans
+        &kp ESC    &kp N1 &kp N2   &kp N3  &kp N4    &kp N5           &trans &trans &trans &trans &trans &trans
+        &kp TAB    &kp N6 &kp N7   &kp N8  &kp N9    &kp N0           &trans &trans &trans &trans &trans &trans
+        &kp LSHIFT &kp LT &kp PLUS &kp DOT &kp MINUS &kp GT           &trans &trans &trans &trans &trans &trans
+                                &tog 3    &mo 4     &kp SPACE        &trans &trans &trans
                         >;
                 };
 
                 move_layer {
                         display-name = "GAME2";
                         bindings = <
-        &kp ESC   &kp LEFT_BRACE        &kp LEFT_BRACKET   &kp UP       &kp RIGHT_BRACKET  &kp RIGHT_BRACE      &trans &trans &trans &trans &trans &trans
-        &kp TAB   &kp KP_PLUS           &kp LEFT           &kp DOWN     &kp RIGHT          &kp KP_MINUS         &trans &trans &trans &trans &trans &trans
-        &kp SHIFT &kp LPAR              &kp KP_PLUS        &kp KP_MINUS &kp KP_SLASH       &kp RPAR             &trans &trans &trans &trans &trans &trans
+        &kp ESC    &kp LEFT_BRACE        &kp LEFT_BRACKET   &kp UP       &kp RIGHT_BRACKET  &kp RIGHT_BRACE      &trans &trans &trans &trans &trans &trans
+        &kp TAB    &kp KP_PLUS           &kp LEFT           &kp DOWN     &kp RIGHT          &kp KP_MINUS         &trans &trans &trans &trans &trans &trans
+        &kp LSHIFT &kp LPAR              &kp KP_PLUS        &kp KP_MINUS &kp KP_SLASH       &kp RPAR             &trans &trans &trans &trans &trans &trans
                                                       &tog 3       &mo 4                   &kp SPACE            &trans &trans &trans
                         >;
                 };
