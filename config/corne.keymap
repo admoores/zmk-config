@@ -56,10 +56,10 @@
                 lower_layer {
                         display-name = "BRAK_NAV";
                         bindings = <
-&trans  &kp LESS_THAN     &kp GREATER_THAN             &kp LEFT_PARENTHESIS       &kp RIGHT_PARENTHESIS          &kp ASTERISK              &trans  &kp HOME  &kp UP    &kp END    &trans  &kp DEL
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET            &kp LEFT_BRACE             &kp RIGHT_BRACE                &kp MINUS                 &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &trans            &trans                       &kp PLUS                   &kp EQUAL                      &kp UNDER                 &trans  &trans    &trans    &trans     &trans  &trans
-                                                       &trans                     &trans                         &trans                    &trans  &trans    &trans
+&trans  &kp LESS_THAN     &kp GREATER_THAN             &kp LEFT_PARENTHESIS       &kp RIGHT_PARENTHESIS          &kp ASTERISK              &trans  &kp HOME            &kp UP          &kp END          &trans  &kp DEL
+&trans  &kp LEFT_BRACKET  &hml LALT RIGHT_BRACKET      &hml LGUI LEFT_BRACE       &hml LCTRL RIGHT_BRACE         &kp MINUS                 &trans  &hmr RCTRL LEFT     &hmr RGUI DOWN  &hmr RALT RIGHT  &trans  &trans
+&trans  &trans            &trans                       &kp PLUS                   &kp EQUAL                      &kp UNDER                 &trans  &trans              &trans          &trans           &trans  &trans
+                                                       &trans                     &trans                         &trans                    &trans  &trans              &trans
 
                         >;
                 };
@@ -67,7 +67,7 @@
                 raise_layer {
                         display-name = "NUMBER";
                         bindings = <
-&kp TILDE  &kp EXCL  &kp AT_SIGN   &kp POUND     &kp DOLLAR     &kp PERCENT          &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DEL
+&kp TILDE  &kp EXCL  &kp AT_SIGN   &kp POUND     &kp DOLLAR     &kp PERCENT          &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC
 &kp GRAVE  &kp N1    &hml LALT N2  &hml LGUI N3  &hml LCTRL N4  &kp N5               &kp N6     &hmr RCTRL N7  &hmr RGUI N8  &hmr RALT N9          &kp N0                 &kp PIPE
 &trans     &trans    &trans        &trans        &kp EQUAL      &kp PLUS             &kp UNDER  &kp MINUS      &trans        &trans                &trans                 &kp BACKSLASH
                                    &trans        &trans         &trans               &trans     &trans         &trans
@@ -80,7 +80,7 @@
         &kp ESC    &kp N1 &kp N2   &kp N3  &kp N4    &kp N5           &trans &trans &trans &trans &trans &trans
         &kp TAB    &kp N6 &kp N7   &kp N8  &kp N9    &kp N0           &trans &trans &trans &trans &trans &trans
         &kp LSHIFT &kp LT &kp PLUS &kp DOT &kp MINUS &kp GT           &trans &trans &trans &trans &trans &trans
-                                &tog 3    &mo 4     &kp SPACE        &trans &trans &trans
+                                &tog 3    &mo 4     &kp SPACE         &trans &trans &trans
                         >;
                 };
 
