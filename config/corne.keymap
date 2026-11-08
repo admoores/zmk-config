@@ -57,7 +57,7 @@
                         display-name = "BRAK_NAV";
                         bindings = <
 &trans  &kp LESS_THAN     &kp GREATER_THAN             &kp LEFT_PARENTHESIS       &kp RIGHT_PARENTHESIS          &kp ASTERISK              &trans  &kp HOME            &kp UP          &kp END          &kp DEL  &kp BSPC
-&trans  &kp LEFT_BRACKET  &hml LALT RIGHT_BRACKET      &hml LGUI LEFT_BRACE       &hml LCTRL RIGHT_BRACE         &kp MINUS                 &trans  &hmr RCTRL LEFT     &hmr RGUI DOWN  &hmr RALT RIGHT  &kp INS  &trans
+&trans  &kp LEFT_BRACKET  &hml LALT RIGHT_BRACKET      &hml LGUI LEFT_BRACE       &hml LCTRL RIGHT_BRACE         &kp MINUS                 &trans  &kp LEFT            &kp DOWN        &kp RIGHT        &kp INS  &trans
 &trans  &trans            &trans                       &kp PLUS                   &kp EQUAL                      &kp UNDER                 &trans  &trans              &trans          &trans           &trans   &trans
                                                        &trans                     &trans                         &trans                    &trans  &trans              &trans
 
