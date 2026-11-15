@@ -58,7 +58,7 @@
                         bindings = <
 &trans  &kp LESS_THAN     &kp GREATER_THAN             &kp LEFT_PARENTHESIS       &kp RIGHT_PARENTHESIS          &kp ASTERISK              &trans  &kp HOME            &kp UP          &kp END          &kp DEL  &kp BSPC
 &trans  &kp LEFT_BRACKET  &hml LALT RIGHT_BRACKET      &hml LGUI LEFT_BRACE       &hml LCTRL RIGHT_BRACE         &kp MINUS                 &trans  &kp LEFT            &kp DOWN        &kp RIGHT        &kp INS  &trans
-&trans  &trans            &trans                       &kp PLUS                   &kp EQUAL                      &kp UNDER                 &trans  &trans              &trans          &trans           &trans   &trans
+&trans  &trans            &trans                       &trans                     &kp EQUAL                      &kp PLUS                  &trans  &trans              &trans          &trans           &trans   &trans
                                                        &trans                     &trans                         &trans                    &trans  &trans              &trans
 
                         >;
@@ -69,7 +69,7 @@
                         bindings = <
 &kp TILDE  &kp EXCL  &kp AT_SIGN   &kp POUND     &kp DOLLAR     &kp PERCENT          &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC
 &kp GRAVE  &kp N1    &hml LALT N2  &hml LGUI N3  &hml LCTRL N4  &kp N5               &kp N6     &hmr RCTRL N7  &hmr RGUI N8  &hmr RALT N9          &kp N0                 &kp PIPE
-&trans     &trans    &trans        &trans        &kp EQUAL      &kp PLUS             &kp UNDER  &kp MINUS      &trans        &trans                &trans                 &kp BACKSLASH
+&trans     &kp N6    &kp N7        &kp N8        &kp N9         &kp N0               &kp PLUS   &kp MINUS      &kp ASTERISK  &kp FSLH              &kp EQUAL              &kp BACKSLASH
                                    &trans        &trans         &trans               &trans     &trans         &trans
                         >;
                 };
@@ -90,7 +90,7 @@
         &kp ESC    &kp LEFT_BRACE        &kp LEFT_BRACKET   &kp UP       &kp RIGHT_BRACKET  &kp RIGHT_BRACE      &trans &trans &trans &trans &trans &trans
         &kp TAB    &kp KP_PLUS           &kp LEFT           &kp DOWN     &kp RIGHT          &kp KP_MINUS         &trans &trans &trans &trans &trans &trans
         &kp LSHIFT &kp LPAR              &kp KP_PLUS        &kp KP_MINUS &kp KP_SLASH       &kp RPAR             &trans &trans &trans &trans &trans &trans
-                                                      &tog 3       &mo 4                   &kp SPACE            &trans &trans &trans
+                                                            &tog 3       &mo                &kp SPACE            &trans &trans &trans
                         >;
                 };
         };
